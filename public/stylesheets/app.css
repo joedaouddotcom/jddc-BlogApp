@@ -1,0 +1,23 @@
+/*CSS design by Joe Daoud - www.joedaoud.com*/
+
+i.icon {
+    font-size: 2em;
+}
+
+.container.main {
+      margin-top: 3.0em;
+}
+
+#footer {
+
+    float:right;
+    font-size: 12px;
+}
+
+#delbutton{
+    float: right;
+}
+
+#delete {
+    display: inline;
+}
