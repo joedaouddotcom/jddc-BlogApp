@@ -5,8 +5,14 @@ var bodyParser = require("body-parser"),
       express = require("express"),
       app = express();
 
-//APP CONFIG      
-mongoose.connect("mongodb://localhost/restful_blog_app");
+
+
+//DB CONFIG      
+var url = process.env.DATABASEURL || "mongodb://localhost/restful_blog_app"
+mongoose.connect(process.env.DATABASEURL);
+
+
+//APP CONFIG
 app.set("view engine", "ejs");
 app.use(express.static('public'));
 app.use(methodOverride("_method"));
